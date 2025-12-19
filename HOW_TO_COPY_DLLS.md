@@ -1,10 +1,59 @@
 # How to Copy DPB DLLs to Project Root
 
+## 🎯 TL;DR - Quick Answer
+
+**Copy DLLs to:** The folder where you see `MapBot.sln` ✅
+
+**Example paths:**
+- If you cloned to: `C:\Users\YourName\mapbot\`
+- Then paste DLLs in: `C:\Users\YourName\mapbot\` (same folder as MapBot.sln)
+- **NOT** in: `C:\Users\YourName\mapbot\3rdParty\Default\MapBot\` ❌
+
+**Rule of thumb:** If you see `MapBot.sln` file in the folder, that's the right place!
+
+---
+
 This guide shows you exactly how to copy the required DreamPoeBot DLLs to the MapBot project root directory.
+
+## ⚠️ IMPORTANT: Which Folder?
+
+**Copy the DLLs to the NEW project root**, NOT the old MapBot source folder!
+
+### There are TWO MapBot-related folders:
+
+1. **NEW: Project Root (where you cloned the repo)** ← **COPY DLLs HERE** ✅
+   - This is where `MapBot.sln` and `MapBot.csproj` are located
+   - Example path: `C:\Users\YourName\Documents\GitHub\mapbot\`
+   - Contains: `MapBot.sln`, `README.md`, `.gitignore`, `3rdParty/` folder
+
+2. **OLD: Source folder inside the project** ← **NOT here** ❌
+   - This is at `3rdParty/Default/MapBot/` (subfolder of project root)
+   - Contains the actual MapBot source code (.cs files)
+   - Example path: `C:\Users\YourName\Documents\GitHub\mapbot\3rdParty\Default\MapBot\`
+
+### Visual Comparison:
+
+```
+✅ CORRECT - Copy DLLs to project root:
+mapbot/                           ← Your cloned repository (PROJECT ROOT)
+├── DreamPoeBot.exe              ← PASTE HERE
+├── log4net.dll                  ← PASTE HERE
+├── Newtonsoft.Json.dll          ← PASTE HERE
+├── MapBot.sln                   ← Build solution file is here
+├── MapBot.csproj                ← Project file is here
+├── README.md
+└── 3rdParty/
+    └── Default/
+        └── MapBot/              ← Old source code location
+            └── MapBot.cs        ← Source files (DON'T paste DLLs here)
+
+❌ WRONG - Don't copy DLLs to the old MapBot folder:
+mapbot/3rdParty/Default/MapBot/  ← This is just source code
+```
 
 ## What You Need to Copy
 
-You need to copy **3 files** from your DreamPoeBot installation to the MapBot project root:
+You need to copy **3 files** from your DreamPoeBot installation to the MapBot **project root**:
 
 1. `DreamPoeBot.exe`
 2. `log4net.dll`
@@ -17,12 +66,18 @@ These files are in your DreamPoeBot installation folder. Common locations:
 - `C:\Program Files\DreamPoeBot\`
 - Or wherever you installed DreamPoeBot
 
-## Where to Copy Them To
+## Where to Copy Them To - DETAILED
 
-Copy them to the **MapBot project root** directory - the same folder where you see:
-- `MapBot.sln`
-- `MapBot.csproj`
-- `README.md`
+**Copy to:** The top-level folder where you cloned the MapBot repository.
+
+**How to identify it:**
+- Look for `MapBot.sln` file (Visual Studio solution)
+- Look for `README.md` file
+- Look for `.gitignore` file
+- The folder should have a `3rdParty` subfolder inside it
+
+**DO NOT copy to:**
+- `3rdParty/Default/MapBot/` (that's the old source folder)
 
 ## Method 1: Using Windows File Explorer (Easiest)
 
@@ -47,23 +102,30 @@ Copy them to the **MapBot project root** directory - the same folder where you s
 
 5. **Paste the files**
    - Press `Ctrl+V` or right-click and select "Paste"
-   - The 3 DLL files should now appear in your MapBot project folder
+   - The 3 DLL files should now appear in your MapBot project root (same location as MapBot.sln)
 
 ### Visual Check:
 
-After copying, your MapBot project root should look like this:
+After copying, when you open your MapBot project root folder in Windows Explorer, you should see:
 
 ```
-mapbot/
-├── DreamPoeBot.exe          ← You just copied this
-├── log4net.dll              ← You just copied this
-├── Newtonsoft.Json.dll      ← You just copied this
-├── MapBot.sln               ← Already there
+Your MapBot Project Root Folder:
+├── DreamPoeBot.exe          ← You just copied this ✅
+├── log4net.dll              ← You just copied this ✅
+├── Newtonsoft.Json.dll      ← You just copied this ✅
+├── MapBot.sln               ← Already there (this proves you're in the right folder!)
 ├── MapBot.csproj            ← Already there
 ├── README.md                ← Already there
+├── BUILD.md                 ← Already there
 ├── .gitignore               ← Already there
-└── 3rdParty/                ← Already there
+├── 3rdParty/                ← Folder with source code (NOT where you paste DLLs)
+│   └── Default/
+│       └── MapBot/          ← Old MapBot source folder (DON'T put DLLs here!)
+├── Exilebuddy.exe           ← Other legacy files already there
+└── (many other existing files and folders...)
 ```
+
+**Key indicator you're in the RIGHT place:** You see `MapBot.sln` in the same folder where you're pasting!
 
 ## Method 2: Using PowerShell (Command Line)
 
