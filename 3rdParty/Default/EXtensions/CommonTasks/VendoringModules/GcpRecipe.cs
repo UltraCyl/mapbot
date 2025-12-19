@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.CommonTasks.VendoringModules
 {

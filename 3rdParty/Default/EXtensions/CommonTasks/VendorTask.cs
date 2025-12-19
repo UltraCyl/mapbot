@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.CommonTasks.VendoringModules;
-using Loki.Bot;
+using DreamPoeBot.Loki.Bot;
 
 namespace Default.EXtensions.CommonTasks
 {

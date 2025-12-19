@@ -2,8 +2,8 @@
 using System.Windows.Controls;
 using Default.EXtensions.Global;
 using log4net;
-using Loki.Bot;
-using Loki.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
 using settings = Default.EXtensions.Settings;
 
 namespace Default.EXtensions

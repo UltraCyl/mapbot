@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.Global;
-using Loki.Bot;
+using DreamPoeBot.Loki.Bot;
 
 namespace Default.MapBot
 {

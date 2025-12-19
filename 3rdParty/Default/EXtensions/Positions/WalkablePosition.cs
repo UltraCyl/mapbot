@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Loki.Common;
+using DreamPoeBot.Loki.Common;
 
 namespace Default.EXtensions.Positions
 {

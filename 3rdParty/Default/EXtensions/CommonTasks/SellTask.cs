@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions.CommonTasks
 {

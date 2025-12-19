@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Buddy.Coroutines;
+using DreamPoeBot.Loki.Coroutine;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Bot.Pathfinding;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Bot.Pathfinding;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions
 {

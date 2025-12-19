@@ -1,5 +1,5 @@
 ﻿using System.Windows.Media;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions
 {

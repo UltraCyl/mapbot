@@ -2,7 +2,7 @@
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
-using Loki.Bot;
+using DreamPoeBot.Loki.Bot;
 
 namespace Default.MapBot
 {

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using Loki.Bot;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions.Global
 {

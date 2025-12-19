@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C5F4A8D-1234-4567-89AB-CDEF01234567}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Default.MapBot</RootNamespace>
+    <AssemblyName>MapBot</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DreamPoeBot">
+      <HintPath>DreamPoeBot.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3rdParty\Default\EXtensions\AreaInfo.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\BotStructure.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CachedObjects\CachedItem.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CachedObjects\CachedObject.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CachedObjects\CachedStrongbox.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CachedObjects\CachedTransition.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CachedObjects\CachedWorldItem.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\ClassExtensions.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\AssignMoveSkillTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\ClearCursorTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\CombatTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\CurrencyRestockTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\FallbackTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\HandleBlockingChestsTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\HandleBlockingObjectTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\IdTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\LeaveAreaTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\LootItemTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\OpenChestTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\PostCombatHookTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\ReturnAfterTownrunTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\SellTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\SortInventoryTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\StashTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\VendorTask.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\VendoringModules\CardExchange.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\VendoringModules\CurrencyExchange.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\VendoringModules\GcpRecipe.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CommonTasks\VendoringModules\VendoringModule.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\CurrencyNames.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Dnd.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Enums.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\ErrorManager.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\ErrorReporter.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\EventArgs.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Events.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\EXtensions.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\CombatAreaCache.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\ComplexExplorer.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\ResurrectionLogic.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\StuckDetection.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\TrackMobLogic.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Global\Travel.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\GlobalLog.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Gui.g.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Gui.xaml.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\InputDelayOverride.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Interval.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Inventories.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\ITaskManagerHolder.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\MapNames.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\MessageBoxes.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Move.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\PlayerAction.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Positions\Position.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Positions\StaticPositions.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Positions\TgtPosition.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Positions\WalkablePosition.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Positions\WorldPosition.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\RarityColors.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Settings.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Tgt.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\TownNpcs.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\Wait.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\World.cs" />
+    <Compile Include="3rdParty\Default\MapBot\AffixData.cs" />
+    <Compile Include="3rdParty\Default\MapBot\AffixSettings.cs" />
+    <Compile Include="3rdParty\Default\MapBot\CastAuraTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\DeviceAreaTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\EnterTrialTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\FinishMapTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\GeneralSettings.cs" />
+    <Compile Include="3rdParty\Default\MapBot\Gui.g.cs" />
+    <Compile Include="3rdParty\Default\MapBot\Gui.xaml.cs" />
+    <Compile Include="3rdParty\Default\MapBot\KillBossTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\MapBot.cs" />
+    <Compile Include="3rdParty\Default\MapBot\MapData.cs" />
+    <Compile Include="3rdParty\Default\MapBot\MapExplorationTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\MapExtensions.cs" />
+    <Compile Include="3rdParty\Default\MapBot\MapSettings.cs" />
+    <Compile Include="3rdParty\Default\MapBot\OpenMapTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\ProximityTriggerTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\SellMapTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\SextantTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\SpecialObjectTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\Statistics.cs" />
+    <Compile Include="3rdParty\Default\MapBot\TakeMapTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\TrackMobTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\TransitionTriggerTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\TravelToHideoutTask.cs" />
+    <Compile Include="3rdParty\Default\MapBot\TravelToLabTask.cs" />
+    <Compile Include="3rdParty\Default\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="3rdParty\Default\EXtensions\Gui.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="3rdParty\Default\MapBot\Gui.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

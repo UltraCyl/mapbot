@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Default.EXtensions.CommonTasks;
 using Loki;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
 using Newtonsoft.Json;
 
 namespace Default.EXtensions

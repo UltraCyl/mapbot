@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 using PurchaseUi = Loki.Game.LokiPoe.InGameState.PurchaseUi;
 
 namespace Default.EXtensions.CommonTasks.VendoringModules

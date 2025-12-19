@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions
 {
