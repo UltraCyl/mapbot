@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions.Positions
 {
