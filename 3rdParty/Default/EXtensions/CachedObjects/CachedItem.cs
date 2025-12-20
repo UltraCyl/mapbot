@@ -1,4 +1,4 @@
-﻿using Loki.Common;
+﻿using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
 

@@ -10,7 +10,7 @@ using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
 using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
-using ExchangeUi = Loki.Game.LokiPoe.InGameState.CardTradeUi;
+using ExchangeUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.CardTradeUi;
 
 namespace Default.EXtensions.CommonTasks.VendoringModules
 {
