@@ -4,7 +4,7 @@ using Default.EXtensions.CachedObjects;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.GameData;
-using PurchaseUi = Loki.Game.LokiPoe.InGameState.PurchaseUi;
+using PurchaseUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.PurchaseUi;
 
 namespace Default.EXtensions.CommonTasks.VendoringModules
 {

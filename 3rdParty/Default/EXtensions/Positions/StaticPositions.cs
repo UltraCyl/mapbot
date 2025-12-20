@@ -1,4 +1,4 @@
-﻿using Loki.Bot;
+﻿using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
 
 namespace Default.EXtensions.Positions
