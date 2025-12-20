@@ -138,7 +138,6 @@
     <Compile Include="3rdParty\Default\MapBot\OpenMapTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\ProximityTriggerTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\SellMapTask.cs" />
-    <Compile Include="3rdParty\Default\MapBot\SextantTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\SpecialObjectTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\Statistics.cs" />
     <Compile Include="3rdParty\Default\MapBot\TakeMapTask.cs" />

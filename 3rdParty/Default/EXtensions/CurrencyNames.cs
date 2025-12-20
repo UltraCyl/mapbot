@@ -94,15 +94,6 @@ namespace Default.EXtensions
         [ItemMetadata("Metadata/Items/Currency/CurrencyItemisedProphecy")]
         public static readonly string Prophecy;
 
-        [ItemMetadata("Metadata/Items/Currency/CurrencyAddAtlasMod")]
-        public static readonly string SextantApprentice;
-
-        [ItemMetadata("Metadata/Items/Currency/CurrencyAddAtlasModMid")]
-        public static readonly string SextantJourneyman;
-
-        [ItemMetadata("Metadata/Items/Currency/CurrencyAddAtlasModHigh")]
-        public static readonly string SextantMaster;
-
         [ItemMetadata("Metadata/Items/Currency/CurrencySealMapLow")]
         public static readonly string SealApprentice;
 

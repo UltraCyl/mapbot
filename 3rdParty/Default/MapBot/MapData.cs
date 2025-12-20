@@ -13,7 +13,6 @@ namespace Default.MapBot
         private int _priority;
         private bool _ignored;
         private bool _ignoredBossroom;
-        private bool _sextant;
         private int _zanaMod;
         private int _mobRemaining = -1;
         private bool _strictMobRemaining;
@@ -38,12 +37,6 @@ namespace Default.MapBot
         {
             get => Type == MapType.Bossroom && (UnsupportedBossroom || _ignoredBossroom);
             set => _ignoredBossroom = value;
-        }
-
-        public bool Sextant
-        {
-            get => _sextant;
-            set => _sextant = value;
         }
 
         public int ZanaMod

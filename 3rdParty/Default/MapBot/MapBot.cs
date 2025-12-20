@@ -289,7 +289,6 @@ namespace Default.MapBot
             _taskManager.Add(new SortInventoryTask());
             _taskManager.Add(new VendorTask());
             _taskManager.Add(new TravelToHideoutTask());
-            _taskManager.Add(new SextantTask());
             _taskManager.Add(new SellMapTask());
             _taskManager.Add(new TakeMapTask());
             _taskManager.Add(new TravelToLabTask());
