@@ -20,6 +20,7 @@ To build MapBot, you need:
 MapBot requires the following DLL files from your DreamPoeBot installation:
 - `DreamPoeBot.exe` - Main DPB executable
 - `log4net.dll` - Logging framework
+- `MahApps.Metro.dll` - UI framework (for NumericUpDown controls)
 - `Newtonsoft.Json.dll` - JSON serialization
 
 These DLLs should be located in the root directory of your DreamPoeBot installation.
@@ -33,6 +34,7 @@ These DLLs should be located in the root directory of your DreamPoeBot installat
    Copy the following files from your DreamPoeBot installation folder to the MapBot project root:
    - DreamPoeBot.exe
    - log4net.dll
+   - MahApps.Metro.dll
    - Newtonsoft.Json.dll
    ```
 

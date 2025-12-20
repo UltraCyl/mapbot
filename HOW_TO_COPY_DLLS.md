@@ -53,11 +53,12 @@ mapbot/3rdParty/Default/MapBot/  ← This is just source code
 
 ## What You Need to Copy
 
-You need to copy **3 files** from your DreamPoeBot installation to the MapBot **project root**:
+You need to copy **4 files** from your DreamPoeBot installation to the MapBot **project root**:
 
 1. `DreamPoeBot.exe`
 2. `log4net.dll`
-3. `Newtonsoft.Json.dll`
+3. `MahApps.Metro.dll`
+4. `Newtonsoft.Json.dll`
 
 ## Where to Find These Files
 
@@ -87,11 +88,12 @@ These files are in your DreamPoeBot installation folder. Common locations:
    - Navigate to where DreamPoeBot is installed (e.g., `C:\DreamPoeBot\`)
    - You should see `DreamPoeBot.exe` and other files
 
-2. **Select the 3 required files**
+2. **Select the 4 required files**
    - Click on `DreamPoeBot.exe`
    - Hold `Ctrl` and click on `log4net.dll`
+   - Still holding `Ctrl`, click on `MahApps.Metro.dll`
    - Still holding `Ctrl`, click on `Newtonsoft.Json.dll`
-   - All 3 files should now be highlighted
+   - All 4 files should now be highlighted
 
 3. **Copy the files**
    - Press `Ctrl+C` or right-click and select "Copy"
@@ -102,7 +104,7 @@ These files are in your DreamPoeBot installation folder. Common locations:
 
 5. **Paste the files**
    - Press `Ctrl+V` or right-click and select "Paste"
-   - The 3 DLL files should now appear in your MapBot project root (same location as MapBot.sln)
+   - The 4 DLL files should now appear in your MapBot project root (same location as MapBot.sln)
 
 ### Visual Check:
 
@@ -112,6 +114,7 @@ After copying, when you open your MapBot project root folder in Windows Explorer
 Your MapBot Project Root Folder:
 ├── DreamPoeBot.exe          ← You just copied this ✅
 ├── log4net.dll              ← You just copied this ✅
+├── MahApps.Metro.dll        ← You just copied this ✅
 ├── Newtonsoft.Json.dll      ← You just copied this ✅
 ├── MapBot.sln               ← Already there (this proves you're in the right folder!)
 ├── MapBot.csproj            ← Already there
@@ -145,9 +148,10 @@ Your MapBot Project Root Folder:
    # Set your DPB installation path
    $DPB_PATH = "C:\DreamPoeBot"  # Change this to YOUR DPB path!
    
-   # Copy the 3 required files
+   # Copy the 4 required files
    Copy-Item "$DPB_PATH\DreamPoeBot.exe" -Destination .
    Copy-Item "$DPB_PATH\log4net.dll" -Destination .
+   Copy-Item "$DPB_PATH\MahApps.Metro.dll" -Destination .
    Copy-Item "$DPB_PATH\Newtonsoft.Json.dll" -Destination .
    ```
 
@@ -156,6 +160,7 @@ Your MapBot Project Root Folder:
    # Check if files exist
    Test-Path "DreamPoeBot.exe"       # Should return: True
    Test-Path "log4net.dll"           # Should return: True
+   Test-Path "MahApps.Metro.dll"     # Should return: True
    Test-Path "Newtonsoft.Json.dll"   # Should return: True
    ```
 
@@ -176,6 +181,7 @@ Your MapBot Project Root Folder:
    REM Change C:\DreamPoeBot to your actual DPB installation path
    copy "C:\DreamPoeBot\DreamPoeBot.exe" .
    copy "C:\DreamPoeBot\log4net.dll" .
+   copy "C:\DreamPoeBot\MahApps.Metro.dll" .
    copy "C:\DreamPoeBot\Newtonsoft.Json.dll" .
    ```
 
@@ -183,6 +189,7 @@ Your MapBot Project Root Folder:
    ```cmd
    dir DreamPoeBot.exe
    dir log4net.dll
+   dir MahApps.Metro.dll
    dir Newtonsoft.Json.dll
    ```
 

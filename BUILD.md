@@ -24,12 +24,14 @@ $PROJECT_ROOT = "." # Current directory
 
 Copy-Item "$DPB_PATH\DreamPoeBot.exe" -Destination $PROJECT_ROOT
 Copy-Item "$DPB_PATH\log4net.dll" -Destination $PROJECT_ROOT
+Copy-Item "$DPB_PATH\MahApps.Metro.dll" -Destination $PROJECT_ROOT
 Copy-Item "$DPB_PATH\Newtonsoft.Json.dll" -Destination $PROJECT_ROOT
 ```
 
 Or manually:
 - Copy `DreamPoeBot.exe` from DPB installation to project root
 - Copy `log4net.dll` from DPB installation to project root
+- Copy `MahApps.Metro.dll` from DPB installation to project root
 - Copy `Newtonsoft.Json.dll` from DPB installation to project root
 
 ### 2. Build with Visual Studio
