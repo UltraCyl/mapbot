@@ -689,11 +689,6 @@
                                 </DataGridCheckBoxColumn.ElementStyle>
                             </DataGridCheckBoxColumn>
 
-                            <DataGridCheckBoxColumn Binding="{Binding Path=Sextant, UpdateSourceTrigger=PropertyChanged}"
-                                                    EditingElementStyle="{DynamicResource MetroDataGridCheckBox}"
-                                                    ElementStyle="{StaticResource DataGridCheckBoxStyle}"
-                                                    Header="Sextant" />
-
                             <mahapps:DataGridNumericUpDownColumn Binding="{Binding Path=ZanaMod, UpdateSourceTrigger=PropertyChanged}"
                                                                  Header="ZM"
                                                                  Minimum="0">

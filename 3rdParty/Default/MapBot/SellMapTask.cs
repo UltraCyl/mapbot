@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions;
-using Loki.Bot;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 using ExSettings = Default.EXtensions.Settings;
 
 namespace Default.MapBot

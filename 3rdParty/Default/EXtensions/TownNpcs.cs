@@ -3,14 +3,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.Objects;
-using DialogUi = Loki.Game.LokiPoe.InGameState.NpcDialogUi;
-using InventoryUi = Loki.Game.LokiPoe.InGameState.InventoryUi;
-using RewardUi = Loki.Game.LokiPoe.InGameState.RewardUi;
-using SellUi = Loki.Game.LokiPoe.InGameState.SellUi;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using DialogUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.NpcDialogUi;
+using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
+using RewardUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.RewardUi;
+using SellUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SellUi;
 
 namespace Default.EXtensions
 {

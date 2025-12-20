@@ -1,5 +1,5 @@
 ﻿using System;
-using Loki.Game;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions
 {

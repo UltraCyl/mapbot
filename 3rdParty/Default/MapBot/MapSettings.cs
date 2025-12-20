@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 using Default.EXtensions;
-using Loki;
+using DreamPoeBot.Loki;
 using Newtonsoft.Json;
 
 namespace Default.MapBot
@@ -211,7 +211,6 @@ namespace Default.MapBot
                     data.Priority = part.Priority;
                     data.Ignored = part.Ignore;
                     data.IgnoredBossroom = part.IgnoreBossroom;
-                    data.Sextant = part.Sextant;
                     data.ZanaMod = part.ZanaMod;
                     data.MobRemaining = part.MobRemaining;
                     data.StrictMobRemaining = part.StrictMobRemaining;
@@ -234,7 +233,6 @@ namespace Default.MapBot
                     Priority = map.Priority,
                     Ignore = map.Ignored,
                     IgnoreBossroom = map.IgnoredBossroom,
-                    Sextant = map.Sextant,
                     ZanaMod = map.ZanaMod,
                     MobRemaining = map.MobRemaining,
                     StrictMobRemaining = map.StrictMobRemaining,
@@ -254,7 +252,6 @@ namespace Default.MapBot
             public int Priority;
             public bool Ignore;
             public bool IgnoreBossroom;
-            public bool Sextant;
             public int ZanaMod;
             public int MobRemaining;
             public bool StrictMobRemaining;

@@ -2,10 +2,11 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.Objects;
-using SkillBar = Loki.Game.LokiPoe.InGameState.SkillBarHud;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using SkillBar = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud;
 
 namespace Default.MapBot
 {

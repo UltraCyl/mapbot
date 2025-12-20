@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.MapBot
 {
