@@ -6,6 +6,7 @@ using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 
 namespace Default.MapBot
@@ -233,7 +234,7 @@ namespace Default.MapBot
                 _hasRedSextants = false;
         }
 
-        public MessageResult Message(Loki.Bot.Message message)
+        public MessageResult Message(Message message)
         {
             var id = message.Id;
             if (id == Events.Messages.ItemStashedEvent)

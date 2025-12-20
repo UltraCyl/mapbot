@@ -4,6 +4,7 @@ using Default.EXtensions.Positions;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
 using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
 
