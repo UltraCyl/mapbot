@@ -101,7 +101,6 @@
     <Compile Include="3rdParty\Default\EXtensions\Global\TrackMobLogic.cs" />
     <Compile Include="3rdParty\Default\EXtensions\Global\Travel.cs" />
     <Compile Include="3rdParty\Default\EXtensions\GlobalLog.cs" />
-    <Compile Include="3rdParty\Default\EXtensions\Gui.g.cs" />
     <Compile Include="3rdParty\Default\EXtensions\Gui.xaml.cs" />
     <Compile Include="3rdParty\Default\EXtensions\InputDelayOverride.cs" />
     <Compile Include="3rdParty\Default\EXtensions\Interval.cs" />
@@ -129,7 +128,6 @@
     <Compile Include="3rdParty\Default\MapBot\EnterTrialTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\FinishMapTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\GeneralSettings.cs" />
-    <Compile Include="3rdParty\Default\MapBot\Gui.g.cs" />
     <Compile Include="3rdParty\Default\MapBot\Gui.xaml.cs" />
     <Compile Include="3rdParty\Default\MapBot\KillBossTask.cs" />
     <Compile Include="3rdParty\Default\MapBot\MapBot.cs" />
