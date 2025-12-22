@@ -10,6 +10,8 @@ MapBot is a bot for running maps in Path of Exile, ported to work with DreamPoeB
 
 ## Building
 
+**Important:** DPB_DIR should point to the folder containing `DreamPoeBot.exe` (the types are embedded in the EXE, not separate DLLs).
+
 ### Option 1: Using DPB_DIR environment variable
 
 Set the `DPB_DIR` environment variable to point to your DreamPoeBot installation directory:
@@ -26,8 +28,21 @@ $env:DPB_DIR = "C:\Path\To\DreamPoeBot"
 dotnet build MapBot.csproj
 ```
 
+or in Git Bash:
+
+```bash
+export DPB_DIR=/c/Path/To/DreamPoeBot
+dotnet build MapBot.csproj
+```
+
 ### Option 2: Using MSBuild property
 
+For Git Bash:
+```bash
+dotnet build MapBot.csproj -p:DPB_DIR=C:/Path/To/DreamPoeBot
+```
+
+For CMD/PowerShell:
 ```cmd
 dotnet build MapBot.csproj /p:DPB_DIR=C:\Path\To\DreamPoeBot
 ```

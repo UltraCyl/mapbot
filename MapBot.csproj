@@ -18,8 +18,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="DreamPoeBot.Loki">
-      <HintPath>$(DPB_DIR)\DreamPoeBot.Loki.dll</HintPath>
+    <Reference Include="DreamPoeBot">
+      <HintPath>$(DPB_DIR)\DreamPoeBot.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
