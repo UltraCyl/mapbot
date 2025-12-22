@@ -118,6 +118,9 @@ namespace Default.EXtensions.CommonTasks.VendoringModules
                             return true;
                         }
 
+                        // TODO: DivinationTab.Ordered and Withdraw() no longer exist in DreamPoeBot API
+                        // This feature needs to be reimplemented using the new API
+                        /*
                         var control = StashUi.DivinationTab.Ordered.FirstOrDefault(c => CardSetsInControl(c) > 0);
 
                         if (control == null)
@@ -138,6 +141,10 @@ namespace Default.EXtensions.CommonTasks.VendoringModules
 
                         if (!await Wait.For(() => CardCountInInventory > cardCount, "cards appear in inventory"))
                             return false;
+                        */
+                        GlobalLog.Warn("[TakeCards] Divination card withdrawal not yet implemented for DreamPoeBot.");
+                        _tabWithCardSet = null;
+                        return true;
 
                         if (Settings.ArtificialDelays)
                             await Wait.ArtificialDelay();

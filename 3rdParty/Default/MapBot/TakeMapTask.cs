@@ -607,12 +607,14 @@ namespace Default.MapBot
             }
         }
 
-        private static IEnumerable<InventoryControlWrapper> SacrificeControls => new[]
+        // TODO: FragmentTab.SacrificeAt* properties no longer exist in DreamPoeBot API
+        // This feature needs to be reimplemented using the new API
+        private static IEnumerable<InventoryControlWrapper> SacrificeControls => new InventoryControlWrapper[]
         {
-            StashUi.FragmentTab.SacrificeAtDusk,
-            StashUi.FragmentTab.SacrificeAtDawn,
-            StashUi.FragmentTab.SacrificeAtNoon,
-            StashUi.FragmentTab.SacrificeAtMidnight
+            // StashUi.FragmentTab.SacrificeAtDusk,
+            // StashUi.FragmentTab.SacrificeAtDawn,
+            // StashUi.FragmentTab.SacrificeAtNoon,
+            // StashUi.FragmentTab.SacrificeAtMidnight
         };
 
         private static void UpdateAvailableCurrency(string currencyName)

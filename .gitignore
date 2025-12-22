@@ -54,7 +54,6 @@ packages/
 !/RecastManaged.dll
 !/System.Windows.Interactivity.dll
 !/Udis86Net.dll
-!/log4net.dll
 !/ThirdPartyConfigMaker.exe
 
 # Rider
