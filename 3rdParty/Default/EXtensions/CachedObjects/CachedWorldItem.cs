@@ -10,12 +10,14 @@ namespace Default.EXtensions.CachedObjects
     {
         public Vector2i Size { get; }
         public Rarity Rarity { get; }
+
         public CachedWorldItem(int id, WalkablePosition position, Vector2i size, Rarity rarity)
             : base(id, position)
         {
             Size = size;
             Rarity = rarity;
         }
+
         public new WorldItem Object => GetObject() as WorldItem;
     }
 }
