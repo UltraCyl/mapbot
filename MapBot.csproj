@@ -34,6 +34,10 @@
       <HintPath>$(DPB_DIR)\MahApps.Metro.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="GameOverlay">
+      <HintPath>$(DPB_DIR)\GameOverlay.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Windows.Forms" />
