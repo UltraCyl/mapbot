@@ -8,7 +8,7 @@ using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.Objects;
-using Loki.Game.Objects.Components;
+using DreamPoeBot.Loki.Game.Objects.Components;
 
 namespace Default.Abyss
 {
