@@ -754,9 +754,10 @@ namespace Default.EXtensions
             [CurrencyNames.Exalted] = () => StashUi.CurrencyTab.ExaltedOrb,
             [CurrencyNames.Mirror] = () => StashUi.CurrencyTab.MirrorOfKalandra,
             [CurrencyNames.SilverCoin] = () => StashUi.CurrencyTab.SilverCoin,
-            [CurrencyNames.SextantApprentice] = () => StashUi.CurrencyTab.ApprenticeCartographersSextant,
-            [CurrencyNames.SextantJourneyman] = () => StashUi.CurrencyTab.JourneymanCartographersSextant,
-            [CurrencyNames.SextantMaster] = () => StashUi.CurrencyTab.MasterCartographersSextant,
+            // Note: Sextant properties may not be available in DreamPoeBot API
+            // [CurrencyNames.SextantApprentice] = () => StashUi.CurrencyTab.ApprenticeCartographersSextant,
+            // [CurrencyNames.SextantJourneyman] = () => StashUi.CurrencyTab.JourneymanCartographersSextant,
+            // [CurrencyNames.SextantMaster] = () => StashUi.CurrencyTab.MasterCartographersSextant,
             [CurrencyNames.Annulment] = () => StashUi.CurrencyTab.OrbOfAnnulment,
         };
 

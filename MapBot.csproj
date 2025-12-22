@@ -25,6 +25,7 @@
     <Reference Include="log4net">
       <HintPath>$(DPB_DIR)\log4net.dll</HintPath>
       <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(DPB_DIR)\Newtonsoft.Json.dll</HintPath>
@@ -38,6 +39,7 @@
       <HintPath>$(DPB_DIR)\GameOverlay.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Windows.Forms" />
