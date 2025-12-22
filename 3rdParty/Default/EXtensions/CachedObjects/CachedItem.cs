@@ -1,3 +1,4 @@
+using DreamPoeBot.Common;
 ﻿using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
@@ -18,7 +19,6 @@ namespace Default.EXtensions.CachedObjects
         public bool IsIdentified { get; }
         public Vector2i Size { get; }
         public int SkillGemLevel { get; }
-
         public CachedItem(Item item)
         {
             Name = item.Name;

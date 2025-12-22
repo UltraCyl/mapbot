@@ -1,4 +1,5 @@
-﻿using DreamPoeBot.Loki.Bot;
+﻿using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
 
 namespace Default.EXtensions.Positions
@@ -16,7 +17,6 @@ namespace Default.EXtensions.Positions
         public static readonly WalkablePosition StashPosAct9 = StashPosAct4;
         public static readonly WalkablePosition StashPosAct10 = new WalkablePosition("Stash", new Vector2i(532, 298));
         public static readonly WalkablePosition StashPosAct11 = new WalkablePosition("Stash", new Vector2i(734, 1065));
-
         public static readonly WalkablePosition WaypointPosAct1 = new WalkablePosition("Waypoint", new Vector2i(256, 169));
         public static readonly WalkablePosition WaypointPosAct2 = new WalkablePosition("Waypoint", new Vector2i(188, 116));
         public static readonly WalkablePosition WaypointPosAct3 = new WalkablePosition("Waypoint", new Vector2i(219, 211));
@@ -28,7 +28,6 @@ namespace Default.EXtensions.Positions
         public static readonly WalkablePosition WaypointPosAct9 = WaypointPosAct4;
         public static readonly WalkablePosition WaypointPosAct10 = new WalkablePosition("Waypoint", new Vector2i(586, 333));
         public static readonly WalkablePosition WaypointPosAct11 = new WalkablePosition("Waypoint", new Vector2i(724, 1115));
-
         public static readonly WalkablePosition CommonPortalSpotAct1 = new WalkablePosition("common portal spot", new Vector2i(200, 245));
         public static readonly WalkablePosition CommonPortalSpotAct2 = new WalkablePosition("common portal spot", new Vector2i(220, 168));
         public static readonly WalkablePosition CommonPortalSpotAct3 = new WalkablePosition("common portal spot", new Vector2i(230, 230));
@@ -40,7 +39,6 @@ namespace Default.EXtensions.Positions
         public static readonly WalkablePosition CommonPortalSpotAct9 = CommonPortalSpotAct4;
         public static readonly WalkablePosition CommonPortalSpotAct10 = new WalkablePosition("common portal spot", new Vector2i(400, 285));
         public static readonly WalkablePosition CommonPortalSpotAct11 = new WalkablePosition("common portal spot", new Vector2i(695, 1200));
-
         public static WalkablePosition GetStashPosByAct()
         {
             switch (World.CurrentArea.Act)
@@ -61,12 +59,7 @@ namespace Default.EXtensions.Positions
             BotManager.Stop();
             return null;
         }
-
-
         public static WalkablePosition GetWaypointPosByAct()
-        {
-            switch (World.CurrentArea.Act)
-            {
                 case 11: return WaypointPosAct11;
                 case 10: return WaypointPosAct10;
                 case 9: return WaypointPosAct9;
@@ -78,16 +71,8 @@ namespace Default.EXtensions.Positions
                 case 3: return WaypointPosAct3;
                 case 2: return WaypointPosAct2;
                 case 1: return WaypointPosAct1;
-            }
             GlobalLog.Error($"[GetWaypointPosByAct] Unknown act: {World.CurrentArea.Act}.");
-            BotManager.Stop();
-            return null;
-        }
-
         public static WalkablePosition GetCommonPortalSpotByAct()
-        {
-            switch (World.CurrentArea.Act)
-            {
                 case 11: return CommonPortalSpotAct11;
                 case 10: return CommonPortalSpotAct10;
                 case 9: return CommonPortalSpotAct9;
@@ -99,10 +84,6 @@ namespace Default.EXtensions.Positions
                 case 3: return CommonPortalSpotAct3;
                 case 2: return CommonPortalSpotAct2;
                 case 1: return CommonPortalSpotAct1;
-            }
             GlobalLog.Error($"[GetCommonPortalSpotByAct] Unknown act: {World.CurrentArea.Act}.");
-            BotManager.Stop();
-            return null;
-        }
     }
 }
