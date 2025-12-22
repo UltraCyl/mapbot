@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Loki;
+using DreamPoeBot.Loki;
 using DreamPoeBot.Loki.Common;
 using Newtonsoft.Json;
 

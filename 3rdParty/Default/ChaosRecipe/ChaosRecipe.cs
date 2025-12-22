@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using Default.EXtensions;
 using Default.EXtensions.Global;
 using log4net;
-using Loki;
+using DreamPoeBot.Loki;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game.GameData;

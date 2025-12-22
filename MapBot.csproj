@@ -30,6 +30,10 @@
       <HintPath>$(DPB_DIR)\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>$(DPB_DIR)\MahApps.Metro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Windows.Forms" />

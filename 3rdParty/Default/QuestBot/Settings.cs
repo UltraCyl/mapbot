@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Default.EXtensions;
-using Loki;
+using DreamPoeBot.Loki;
 using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game.GameData;
 using Newtonsoft.Json;
