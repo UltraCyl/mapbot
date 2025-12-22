@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
+using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 using DreamPoeBot.Loki.Game;
 using Message = DreamPoeBot.Loki.Bot.Message;
 

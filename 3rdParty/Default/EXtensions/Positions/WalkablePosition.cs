@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using DreamPoeBot.Loki.Common;
+using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 
 namespace Default.EXtensions.Positions
 {

@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Common;
+using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions.CommonTasks
