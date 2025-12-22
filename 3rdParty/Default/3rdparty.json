@@ -1,5 +1,6 @@
 {
   "AssemblyName": "MapBot",
+  "SignAssembly": false,
   "FileList": [
     "EXtensions\\AreaInfo.cs",
     "EXtensions\\BotStructure.cs",
