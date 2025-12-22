@@ -39,13 +39,15 @@ dotnet build MapBot.csproj
 
 For Git Bash:
 ```bash
-dotnet build MapBot.csproj -p:DPB_DIR=C:/Path/To/DreamPoeBot
+dotnet build MapBot.csproj -p:DPB_DIR=C:/Users/pc/Desktop/DreamPoeBot-ForTesting/DreamPoeBot
 ```
 
 For CMD/PowerShell:
 ```cmd
-dotnet build MapBot.csproj /p:DPB_DIR=C:\Path\To\DreamPoeBot
+dotnet build MapBot.csproj /p:DPB_DIR=C:\Users\pc\Desktop\DreamPoeBot-ForTesting\DreamPoeBot
 ```
+
+**Note:** Adjust the path to match your actual DreamPoeBot installation location.
 
 ### Option 3: Edit the project file
 
