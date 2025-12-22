@@ -1,6 +1,7 @@
-﻿using Loki.Common;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+﻿using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.CachedObjects
 {

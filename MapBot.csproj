@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MapBot</AssemblyName>
+    <RootNamespace>Default.MapBot</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- DPB_DIR should point to your DreamPoeBot installation directory -->
+    <DPB_DIR Condition="'$(DPB_DIR)' == ''">$(MSBuildThisFileDirectory)..\..\DreamPoeBot</DPB_DIR>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DreamPoeBot">
+      <HintPath>$(DPB_DIR)\DreamPoeBot.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>$(DPB_DIR)\log4net.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(DPB_DIR)\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>$(DPB_DIR)\MahApps.Metro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GameOverlay">
+      <HintPath>$(DPB_DIR)\GameOverlay.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="3rdParty\Default\MapBot\**\*.cs" />
+    <Compile Include="3rdParty\Default\EXtensions\**\*.cs" />
+    <EmbeddedResource Include="3rdParty\Default\MapBot\**\*.xaml" />
+    <EmbeddedResource Include="3rdParty\Default\EXtensions\**\*.xaml" />
+  </ItemGroup>
+
+</Project>

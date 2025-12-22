@@ -2,10 +2,11 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.CommonTasks
 {
@@ -47,13 +48,17 @@ namespace Default.EXtensions.CommonTasks
 
             foreach (var position in positions1)
             {
-                MouseManager.SetMousePos("EXtensions.CommonTasks.HandleBlockingChestsTask", position);
+                // MouseManager and Input.SetCursorPos no longer exist in DreamPoeBot API
+                // Commenting out cursor positioning - may need alternative approach
+                // LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
 
             foreach (var position in positions2)
             {
-                MouseManager.SetMousePos("EXtensions.CommonTasks.HandleBlockingChestsTask", position);
+                // MouseManager and Input.SetCursorPos no longer exist in DreamPoeBot API
+                // Commenting out cursor positioning - may need alternative approach
+                // LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
             return true;
@@ -67,7 +72,8 @@ namespace Default.EXtensions.CommonTasks
             if (target != null)
             {
                 GlobalLog.Info($"[HandleBlockingChestsTask] \"{target.Name}\" ({target.Id}) is under the cursor. Now clicking on it.");
-                LokiPoe.Input.PressLMB();
+                // PressLMB no longer exists - using ClickLMB instead
+                LokiPoe.Input.ClickLMB();
                 await Coroutines.FinishCurrentAction(false);
             }
         }

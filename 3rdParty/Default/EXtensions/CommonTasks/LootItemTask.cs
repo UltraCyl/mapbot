@@ -3,11 +3,12 @@ using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.CommonTasks
 {

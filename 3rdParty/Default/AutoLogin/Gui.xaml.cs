@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using Default.EXtensions;
-using Loki.Game;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.AutoLogin
 {

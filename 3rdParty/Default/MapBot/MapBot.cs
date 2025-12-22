@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Buddy.Coroutines;
+using DreamPoeBot.Loki.Coroutine;
 using Default.EXtensions;
 using Default.EXtensions.CommonTasks;
 using Default.EXtensions.Global;
 using log4net;
-using Loki.Bot;
-using Loki.Bot.Pathfinding;
-using Loki.Common;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Bot.Pathfinding;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
 using Newtonsoft.Json.Linq;
 using UserControl = System.Windows.Controls.UserControl;
 
@@ -40,7 +40,8 @@ namespace Default.MapBot
             Log.Debug($"[Start] MsBetweenTicks: {BotManager.MsBetweenTicks}.");
             Log.Debug($"[Start] NetworkingMode: {LokiPoe.ConfigManager.NetworkingMode}.");
             Log.Debug($"[Start] KeyPickup: {LokiPoe.ConfigManager.KeyPickup}.");
-            Log.Debug($"[Start] IsAutoEquipEnabled: {LokiPoe.ConfigManager.IsAutoEquipEnabled}.");
+            // IsAutoEquipEnabled no longer exists in DreamPoeBot API
+            //Log.Debug($"[Start] IsAutoEquipEnabled: {LokiPoe.ConfigManager.IsAutoEquipEnabled}.");
 
             // Since this bot will be performing client actions, we need to enable the process hook manager.
             LokiPoe.ProcessHookManager.Enable();

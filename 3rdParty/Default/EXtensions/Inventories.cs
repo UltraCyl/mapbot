@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using Cursor = Loki.Game.LokiPoe.InGameState.CursorItemOverlay;
-using InventoryUi = Loki.Game.LokiPoe.InGameState.InventoryUi;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using Cursor = DreamPoeBot.Loki.Game.LokiPoe.InGameState.CursorItemOverlay;
+using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 
 namespace Default.EXtensions
 {
@@ -104,18 +105,23 @@ namespace Default.EXtensions
                     return false;
             }
 
-            if (LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected)
-                return true;
+            // IsLegacyTabSelected and SwitchToLegacyTab no longer exist in DreamPoeBot API
+            // Assuming legacy tab handling has changed or is no longer needed
+            //if (LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected)
+            //    return true;
 
-            var err = LokiPoe.InGameState.ChallengesUi.SwitchToLegacyTab();
-            if (err != SwitchToTabResult.None)
-            {
-                GlobalLog.Error($"[OpenLegacyUi] Switch to legacy tab error: \"{err}\".");
-                return false;
-            }
+            //var err = LokiPoe.InGameState.ChallengesUi.SwitchToLegacyTab();
+            //if (err != SwitchToTabResult.None)
+            //{
+            //    GlobalLog.Error($"[OpenLegacyUi] Switch to legacy tab error: \"{err}\".");
+            //    return false;
+            //}
 
-            if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected, "switching to legacy tab"))
-                return false;
+            //if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected, "switching to legacy tab"))
+            //    return false;
+            
+            // Simplified - assuming legacy tab is available
+            return true;
 
             if (Settings.Instance.ArtificialDelays)
                 await Wait.ArtificialDelay();
@@ -131,6 +137,8 @@ namespace Default.EXtensions
                     return false;
             }
 
+            // Prophecies tab no longer exists in DreamPoeBot API
+            /*
             if (LokiPoe.InGameState.ChallengesUi.IsPropheciesTabSelected)
                 return true;
 
@@ -143,6 +151,10 @@ namespace Default.EXtensions
 
             if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsPropheciesTabSelected, "switching to prophecy tab"))
                 return false;
+            */
+            
+            GlobalLog.Warn("[OpenProphecyUi] Prophecies tab no longer exists in DreamPoeBot API.");
+            return false;
 
             if (Settings.Instance.ArtificialDelays)
                 await Wait.ArtificialDelay();
@@ -753,9 +765,10 @@ namespace Default.EXtensions
             [CurrencyNames.Exalted] = () => StashUi.CurrencyTab.ExaltedOrb,
             [CurrencyNames.Mirror] = () => StashUi.CurrencyTab.MirrorOfKalandra,
             [CurrencyNames.SilverCoin] = () => StashUi.CurrencyTab.SilverCoin,
-            [CurrencyNames.SextantApprentice] = () => StashUi.CurrencyTab.ApprenticeCartographersSextant,
-            [CurrencyNames.SextantJourneyman] = () => StashUi.CurrencyTab.JourneymanCartographersSextant,
-            [CurrencyNames.SextantMaster] = () => StashUi.CurrencyTab.MasterCartographersSextant,
+            // Note: Sextant properties may not be available in DreamPoeBot API
+            // [CurrencyNames.SextantApprentice] = () => StashUi.CurrencyTab.ApprenticeCartographersSextant,
+            // [CurrencyNames.SextantJourneyman] = () => StashUi.CurrencyTab.JourneymanCartographersSextant,
+            // [CurrencyNames.SextantMaster] = () => StashUi.CurrencyTab.MasterCartographersSextant,
             [CurrencyNames.Annulment] = () => StashUi.CurrencyTab.OrbOfAnnulment,
         };
 

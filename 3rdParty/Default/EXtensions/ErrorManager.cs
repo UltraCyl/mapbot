@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Loki.Bot;
+using DreamPoeBot.Loki.Bot;
 
 namespace Default.EXtensions
 {

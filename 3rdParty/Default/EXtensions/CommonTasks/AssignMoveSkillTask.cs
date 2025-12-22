@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Loki.Bot;
-using Loki.Game;
-using Message = Loki.Bot.Message;
-using Skillbar = Loki.Game.LokiPoe.InGameState.SkillBarHud;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using Message = DreamPoeBot.Loki.Bot.Message;
+using Skillbar = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud;
 
 namespace Default.EXtensions.CommonTasks
 {

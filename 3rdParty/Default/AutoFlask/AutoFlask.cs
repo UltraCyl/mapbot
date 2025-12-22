@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using Default.EXtensions;
 using log4net;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 using AutoFlaskSettings = Default.AutoFlask.Settings;
-using FlaskHud = Loki.Game.LokiPoe.InGameState.QuickFlaskHud;
+using FlaskHud = DreamPoeBot.Loki.Game.LokiPoe.InGameState.QuickFlaskHud;
 
 namespace Default.AutoFlask
 {

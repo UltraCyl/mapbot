@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
 using JetBrains.Annotations;
-using Loki.Bot.Pathfinding;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot.Pathfinding;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions
 {

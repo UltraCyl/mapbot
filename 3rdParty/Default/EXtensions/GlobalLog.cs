@@ -1,5 +1,5 @@
 ﻿using log4net;
-using Loki.Common;
+using DreamPoeBot.Loki.Common;
 
 namespace Default.EXtensions
 {

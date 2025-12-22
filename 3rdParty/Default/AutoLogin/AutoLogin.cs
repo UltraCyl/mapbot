@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using Buddy.Coroutines;
+using DreamPoeBot.Loki.Coroutine;
 using Default.EXtensions;
 using log4net;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
 using AutoLoginSettings = Default.AutoLogin.Settings;
 
 namespace Default.AutoLogin

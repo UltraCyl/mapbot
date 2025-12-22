@@ -3,12 +3,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 
 namespace Default.EXtensions.CommonTasks
 {

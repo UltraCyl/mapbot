@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
-using ExchangeUi = Loki.Game.LokiPoe.InGameState.CardTradeUi;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
+using ExchangeUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.CardTradeUi;
 
 namespace Default.EXtensions.CommonTasks.VendoringModules
 {
@@ -117,6 +118,9 @@ namespace Default.EXtensions.CommonTasks.VendoringModules
                             return true;
                         }
 
+                        // TODO: DivinationTab.Ordered and Withdraw() no longer exist in DreamPoeBot API
+                        // This feature needs to be reimplemented using the new API
+                        /*
                         var control = StashUi.DivinationTab.Ordered.FirstOrDefault(c => CardSetsInControl(c) > 0);
 
                         if (control == null)
@@ -137,6 +141,10 @@ namespace Default.EXtensions.CommonTasks.VendoringModules
 
                         if (!await Wait.For(() => CardCountInInventory > cardCount, "cards appear in inventory"))
                             return false;
+                        */
+                        GlobalLog.Warn("[TakeCards] Divination card withdrawal not yet implemented for DreamPoeBot.");
+                        _tabWithCardSet = null;
+                        return true;
 
                         if (Settings.ArtificialDelays)
                             await Wait.ArtificialDelay();

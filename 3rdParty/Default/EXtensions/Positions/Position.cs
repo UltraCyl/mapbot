@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using Loki.Common;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Common;
 
 namespace Default.EXtensions.Positions
 {

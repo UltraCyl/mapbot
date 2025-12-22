@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions
 {

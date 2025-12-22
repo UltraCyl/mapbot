@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Game;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions.Global
 {

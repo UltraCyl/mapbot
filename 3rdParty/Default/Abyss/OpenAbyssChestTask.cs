@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.Abyss
 {

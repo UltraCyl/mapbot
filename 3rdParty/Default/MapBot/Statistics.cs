@@ -6,8 +6,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using Default.EXtensions;
 using JetBrains.Annotations;
-using Loki.Common;
-using Loki.Game;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.MapBot
 {

@@ -1,11 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.MapBot
 {
@@ -211,7 +212,8 @@ namespace Default.MapBot
                     else
                     {
                         GlobalLog.Warn($"[OpenMapTask] Opening {map.Name} with {deviceOptions[modIndex].Item1} mod.");
-                        activated = LokiPoe.InGameState.MasterDeviceUi.ActivateWithOption(modIndex);
+                        // ActivateWithOption no longer exists in DreamPoeBot API - using Activate instead
+                        activated = LokiPoe.InGameState.MasterDeviceUi.Activate();
                     }
                 }
                 else

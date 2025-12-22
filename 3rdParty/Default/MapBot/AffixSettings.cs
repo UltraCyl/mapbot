@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Default.EXtensions;
-using Loki;
+using DreamPoeBot.Loki;
 using Newtonsoft.Json;
 
 namespace Default.MapBot

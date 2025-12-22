@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CommonTasks;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.QuestBot
 {

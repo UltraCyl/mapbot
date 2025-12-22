@@ -4,11 +4,11 @@ using System.Windows.Controls;
 using Default.EXtensions;
 using Default.EXtensions.Global;
 using log4net;
-using Loki;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 using settings = Default.ChaosRecipe.Settings;
 
 namespace Default.ChaosRecipe

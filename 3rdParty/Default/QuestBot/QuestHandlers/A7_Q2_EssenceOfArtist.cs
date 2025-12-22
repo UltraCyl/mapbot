@@ -3,10 +3,10 @@ using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
 using Default.EXtensions.Positions;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using MapDeviceUi = Loki.Game.LokiPoe.InGameState.MapDeviceUi;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using MapDeviceUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.MapDeviceUi;
 
 namespace Default.QuestBot.QuestHandlers
 {

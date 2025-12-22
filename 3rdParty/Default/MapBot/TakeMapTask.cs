@@ -3,13 +3,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using InventoryUi = Loki.Game.LokiPoe.InGameState.InventoryUi;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
+using DreamPoeBot.Common;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 using ExSettings = Default.EXtensions.Settings;
 
 namespace Default.MapBot
@@ -606,12 +607,14 @@ namespace Default.MapBot
             }
         }
 
-        private static IEnumerable<InventoryControlWrapper> SacrificeControls => new[]
+        // TODO: FragmentTab.SacrificeAt* properties no longer exist in DreamPoeBot API
+        // This feature needs to be reimplemented using the new API
+        private static IEnumerable<InventoryControlWrapper> SacrificeControls => new InventoryControlWrapper[]
         {
-            StashUi.FragmentTab.SacrificeAtDusk,
-            StashUi.FragmentTab.SacrificeAtDawn,
-            StashUi.FragmentTab.SacrificeAtNoon,
-            StashUi.FragmentTab.SacrificeAtMidnight
+            // StashUi.FragmentTab.SacrificeAtDusk,
+            // StashUi.FragmentTab.SacrificeAtDawn,
+            // StashUi.FragmentTab.SacrificeAtNoon,
+            // StashUi.FragmentTab.SacrificeAtMidnight
         };
 
         private static void UpdateAvailableCurrency(string currencyName)

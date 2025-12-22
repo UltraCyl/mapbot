@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Default.EXtensions;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using FlaskHud = Loki.Game.LokiPoe.InGameState.QuickFlaskHud;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using FlaskHud = DreamPoeBot.Loki.Game.LokiPoe.InGameState.QuickFlaskHud;
 
 namespace Default.AutoFlask
 {

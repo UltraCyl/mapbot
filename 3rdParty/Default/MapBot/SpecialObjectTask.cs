@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.MapBot
 {
@@ -121,12 +121,15 @@ namespace Default.MapBot
             _postInteraction = null;
             Objects.Clear();
 
+            // MapZanaSubareaMission stat no longer exists in DreamPoeBot API
+            /*
             if (LokiPoe.LocalData.MapMods.ContainsKey(StatTypeGGG.MapZanaSubareaMission))
             {
                 GlobalLog.Info("[SpecialObjectTask] Zana map detected.");
                 _enabled = true;
                 return;
             }
+            */
             if (areaName == MapNames.OlmecSanctum)
             {
                 _enabled = true;
