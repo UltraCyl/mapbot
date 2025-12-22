@@ -137,6 +137,8 @@ namespace Default.EXtensions
                     return false;
             }
 
+            // Prophecies tab no longer exists in DreamPoeBot API
+            /*
             if (LokiPoe.InGameState.ChallengesUi.IsPropheciesTabSelected)
                 return true;
 
@@ -149,6 +151,10 @@ namespace Default.EXtensions
 
             if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsPropheciesTabSelected, "switching to prophecy tab"))
                 return false;
+            */
+            
+            GlobalLog.Warn("[OpenProphecyUi] Prophecies tab no longer exists in DreamPoeBot API.");
+            return false;
 
             if (Settings.Instance.ArtificialDelays)
                 await Wait.ArtificialDelay();

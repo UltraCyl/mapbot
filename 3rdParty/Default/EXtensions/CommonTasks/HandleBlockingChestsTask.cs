@@ -48,15 +48,17 @@ namespace Default.EXtensions.CommonTasks
 
             foreach (var position in positions1)
             {
-                // MouseManager no longer exists in DreamPoeBot API - using Input.SetCursorPos instead
-                LokiPoe.Input.SetCursorPos(position);
+                // MouseManager and Input.SetCursorPos no longer exist in DreamPoeBot API
+                // Commenting out cursor positioning - may need alternative approach
+                // LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
 
             foreach (var position in positions2)
             {
-                // MouseManager no longer exists in DreamPoeBot API - using Input.SetCursorPos instead
-                LokiPoe.Input.SetCursorPos(position);
+                // MouseManager and Input.SetCursorPos no longer exist in DreamPoeBot API
+                // Commenting out cursor positioning - may need alternative approach
+                // LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
             return true;

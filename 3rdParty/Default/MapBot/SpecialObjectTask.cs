@@ -121,12 +121,15 @@ namespace Default.MapBot
             _postInteraction = null;
             Objects.Clear();
 
+            // MapZanaSubareaMission stat no longer exists in DreamPoeBot API
+            /*
             if (LokiPoe.LocalData.MapMods.ContainsKey(StatTypeGGG.MapZanaSubareaMission))
             {
                 GlobalLog.Info("[SpecialObjectTask] Zana map detected.");
                 _enabled = true;
                 return;
             }
+            */
             if (areaName == MapNames.OlmecSanctum)
             {
                 _enabled = true;
