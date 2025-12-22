@@ -10,7 +10,6 @@ using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
 using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
 using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
-using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 using ExSettings = Default.EXtensions.Settings;
 
 namespace Default.MapBot

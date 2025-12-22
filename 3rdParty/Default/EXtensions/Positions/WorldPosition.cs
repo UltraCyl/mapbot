@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using DreamPoeBot.Loki.Bot.Pathfinding;
 using DreamPoeBot.Loki.Common;
-using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions.Positions

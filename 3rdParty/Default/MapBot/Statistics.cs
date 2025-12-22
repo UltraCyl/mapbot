@@ -8,7 +8,6 @@ using Default.EXtensions;
 using JetBrains.Annotations;
 using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Game;
-using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 
 namespace Default.MapBot
 {

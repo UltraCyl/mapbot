@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using DreamPoeBot.Loki.Common;
-using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 
 namespace Default.EXtensions.Positions
 {

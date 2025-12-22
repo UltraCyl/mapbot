@@ -6,7 +6,6 @@ using Default.EXtensions.Positions;
 using JetBrains.Annotations;
 using DreamPoeBot.Loki.Bot.Pathfinding;
 using DreamPoeBot.Loki.Common;
-using Vector2i = DreamPoeBot.Loki.Common.Vector2i;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.GameData;
 using DreamPoeBot.Loki.Game.Objects;
