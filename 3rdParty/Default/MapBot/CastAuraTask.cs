@@ -6,6 +6,7 @@ using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.Objects;
 using SkillBar = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud;
+using Skill = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud.Skill;
 
 namespace Default.MapBot
 {
