@@ -6,7 +6,6 @@ using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.Objects;
 using SkillBar = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud;
-using Skill = DreamPoeBot.Loki.Game.LokiPoe.InGameState.SkillBarHud.Skill;
 
 namespace Default.MapBot
 {
@@ -44,7 +43,7 @@ namespace Default.MapBot
             return false;
         }
 
-        private static async Task CastAuras(IEnumerable<Skill> auras)
+        private static async Task CastAuras(IEnumerable<SkillBar.Skill> auras)
         {
             int slotForHidden = AllAuras.First(a => a.IsOnSkillBar).Slot;
             foreach (var aura in auras.OrderByDescending(a => a.Slot))
@@ -59,7 +58,7 @@ namespace Default.MapBot
             }
         }
 
-        private static async Task ApplyAura(Skill aura)
+        private static async Task ApplyAura(SkillBar.Skill aura)
         {
             string name = aura.Name;
             GlobalLog.Debug($"[CastAuraTask] Now casting \"{name}\".");
@@ -73,7 +72,7 @@ namespace Default.MapBot
             await Wait.SleepSafe(100);
         }
 
-        private static async Task SetAuraToSlot(Skill aura, int slot)
+        private static async Task SetAuraToSlot(SkillBar.Skill aura, int slot)
         {
             string name = aura.Name;
             GlobalLog.Debug($"[CastAuraTask] Now setting \"{name}\" to slot {slot}.");
@@ -93,9 +92,9 @@ namespace Default.MapBot
             return skill != null && skill.Name == name;
         }
 
-        private static List<Skill> GetAurasForCast()
+        private static List<SkillBar.Skill> GetAurasForCast()
         {
-            var auras = new List<Skill>();
+            var auras = new List<SkillBar.Skill>();
             foreach (var aura in AllAuras)
             {
                 if (GeneralSettings.Instance.IgnoreHiddenAuras && !aura.IsOnSkillBar)
@@ -109,7 +108,7 @@ namespace Default.MapBot
             return auras;
         }
 
-        private static IEnumerable<Skill> AllAuras => SkillBar.Skills.Where(skill => AuraNames.Contains(skill.Name) || skill.IsAurifiedCurse);
+        private static IEnumerable<SkillBar.Skill> AllAuras => SkillBar.Skills.Where(skill => AuraNames.Contains(skill.Name) || skill.IsAurifiedCurse);
 
         private static bool PlayerHasAura(string auraName)
         {
