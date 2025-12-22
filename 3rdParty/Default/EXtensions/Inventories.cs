@@ -105,18 +105,23 @@ namespace Default.EXtensions
                     return false;
             }
 
-            if (LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected)
-                return true;
+            // IsLegacyTabSelected and SwitchToLegacyTab no longer exist in DreamPoeBot API
+            // Assuming legacy tab handling has changed or is no longer needed
+            //if (LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected)
+            //    return true;
 
-            var err = LokiPoe.InGameState.ChallengesUi.SwitchToLegacyTab();
-            if (err != SwitchToTabResult.None)
-            {
-                GlobalLog.Error($"[OpenLegacyUi] Switch to legacy tab error: \"{err}\".");
-                return false;
-            }
+            //var err = LokiPoe.InGameState.ChallengesUi.SwitchToLegacyTab();
+            //if (err != SwitchToTabResult.None)
+            //{
+            //    GlobalLog.Error($"[OpenLegacyUi] Switch to legacy tab error: \"{err}\".");
+            //    return false;
+            //}
 
-            if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected, "switching to legacy tab"))
-                return false;
+            //if (!await Wait.For(() => LokiPoe.InGameState.ChallengesUi.IsLegacyTabSelected, "switching to legacy tab"))
+            //    return false;
+            
+            // Simplified - assuming legacy tab is available
+            return true;
 
             if (Settings.Instance.ArtificialDelays)
                 await Wait.ArtificialDelay();

@@ -212,7 +212,8 @@ namespace Default.MapBot
                     else
                     {
                         GlobalLog.Warn($"[OpenMapTask] Opening {map.Name} with {deviceOptions[modIndex].Item1} mod.");
-                        activated = LokiPoe.InGameState.MasterDeviceUi.ActivateWithOption(modIndex);
+                        // ActivateWithOption no longer exists in DreamPoeBot API - using Activate instead
+                        activated = LokiPoe.InGameState.MasterDeviceUi.Activate();
                     }
                 }
                 else

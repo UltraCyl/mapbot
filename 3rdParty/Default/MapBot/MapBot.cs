@@ -40,7 +40,8 @@ namespace Default.MapBot
             Log.Debug($"[Start] MsBetweenTicks: {BotManager.MsBetweenTicks}.");
             Log.Debug($"[Start] NetworkingMode: {LokiPoe.ConfigManager.NetworkingMode}.");
             Log.Debug($"[Start] KeyPickup: {LokiPoe.ConfigManager.KeyPickup}.");
-            Log.Debug($"[Start] IsAutoEquipEnabled: {LokiPoe.ConfigManager.IsAutoEquipEnabled}.");
+            // IsAutoEquipEnabled no longer exists in DreamPoeBot API
+            //Log.Debug($"[Start] IsAutoEquipEnabled: {LokiPoe.ConfigManager.IsAutoEquipEnabled}.");
 
             // Since this bot will be performing client actions, we need to enable the process hook manager.
             LokiPoe.ProcessHookManager.Enable();

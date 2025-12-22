@@ -48,13 +48,15 @@ namespace Default.EXtensions.CommonTasks
 
             foreach (var position in positions1)
             {
-                MouseManager.SetMousePos("EXtensions.CommonTasks.HandleBlockingChestsTask", position);
+                // MouseManager no longer exists in DreamPoeBot API - using Input.SetCursorPos instead
+                LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
 
             foreach (var position in positions2)
             {
-                MouseManager.SetMousePos("EXtensions.CommonTasks.HandleBlockingChestsTask", position);
+                // MouseManager no longer exists in DreamPoeBot API - using Input.SetCursorPos instead
+                LokiPoe.Input.SetCursorPos(position);
                 await Click();
             }
             return true;
@@ -68,7 +70,8 @@ namespace Default.EXtensions.CommonTasks
             if (target != null)
             {
                 GlobalLog.Info($"[HandleBlockingChestsTask] \"{target.Name}\" ({target.Id}) is under the cursor. Now clicking on it.");
-                LokiPoe.Input.PressLMB();
+                // PressLMB no longer exists - using ClickLMB instead
+                LokiPoe.Input.ClickLMB();
                 await Coroutines.FinishCurrentAction(false);
             }
         }
