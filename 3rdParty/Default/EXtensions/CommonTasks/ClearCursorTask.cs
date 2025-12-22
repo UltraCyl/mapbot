@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Forms;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Message = Loki.Bot.Message;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using Message = DreamPoeBot.Loki.Bot.Message;
 
 namespace Default.EXtensions.CommonTasks
 {

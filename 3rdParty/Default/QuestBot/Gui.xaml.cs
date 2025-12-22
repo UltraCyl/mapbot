@@ -9,7 +9,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using Default.EXtensions;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.QuestBot
 {

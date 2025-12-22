@@ -1,7 +1,7 @@
 ﻿using System;
 using Default.EXtensions.Positions;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.CachedObjects
 {

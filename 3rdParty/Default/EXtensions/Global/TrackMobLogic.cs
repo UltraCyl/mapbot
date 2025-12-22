@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Buddy.Coroutines;
+using DreamPoeBot.Loki.Coroutine;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.EXtensions.Global
 {

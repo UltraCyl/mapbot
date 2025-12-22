@@ -7,11 +7,11 @@ using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using InventoryUi = Loki.Game.LokiPoe.InGameState.InventoryUi;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
 
 namespace Default.QuestBot
 {

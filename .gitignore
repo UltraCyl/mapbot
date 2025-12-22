@@ -1,0 +1,66 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+*.dll
+*.exe
+*.pdb
+!Exilebuddy.exe
+!*.dll
+!*.pdb
+# Exception: keep the legacy DLLs in root directory
+!/GreyMagic.dll
+!/HelixToolkit*.dll
+!/ICSharpCode*.dll
+!/IronPython*.dll
+!/Loki.Globalization.dll
+!/MahApps*.dll
+!/Microsoft*.dll
+!/Newtonsoft.Json.dll
+!/RecastDetourNet.dll
+!/RecastManaged.dll
+!/System.Windows.Interactivity.dll
+!/Udis86Net.dll
+!/log4net.dll
+!/ThirdPartyConfigMaker.exe
+
+# Rider
+.idea/
+
+# Temp files
+*.tmp
+*.temp
+*~

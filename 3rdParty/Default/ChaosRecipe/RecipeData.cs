@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using Default.EXtensions;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 using Newtonsoft.Json;
 
 namespace Default.ChaosRecipe

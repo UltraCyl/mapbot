@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
-using Cursor = Loki.Game.LokiPoe.InGameState.CursorItemOverlay;
-using InventoryUi = Loki.Game.LokiPoe.InGameState.InventoryUi;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
+using Cursor = DreamPoeBot.Loki.Game.LokiPoe.InGameState.CursorItemOverlay;
+using InventoryUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.InventoryUi;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 
 namespace Default.EXtensions
 {

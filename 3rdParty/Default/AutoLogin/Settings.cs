@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 using Loki;
-using Loki.Common;
+using DreamPoeBot.Loki.Common;
 
 namespace Default.AutoLogin
 {

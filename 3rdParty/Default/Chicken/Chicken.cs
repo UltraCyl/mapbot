@@ -6,11 +6,11 @@ using Default.EXtensions;
 using Default.EXtensions.CommonTasks;
 using Default.EXtensions.Global;
 using log4net;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 using static Default.EXtensions.EXtensions;
 using ChickenSettings = Default.Chicken.Settings;
 

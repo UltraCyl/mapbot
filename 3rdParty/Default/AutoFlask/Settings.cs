@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Loki;
-using Loki.Common;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game.GameData;
 using Newtonsoft.Json;
 
 namespace Default.AutoFlask

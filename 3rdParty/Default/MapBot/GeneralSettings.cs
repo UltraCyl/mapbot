@@ -1,5 +1,5 @@
 ﻿using Loki;
-using Loki.Common;
+using DreamPoeBot.Loki.Common;
 using Newtonsoft.Json;
 
 namespace Default.MapBot

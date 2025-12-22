@@ -4,10 +4,10 @@ using System.Windows.Controls;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 using Loki.Game.Objects.Components;
 
 namespace Default.Abyss

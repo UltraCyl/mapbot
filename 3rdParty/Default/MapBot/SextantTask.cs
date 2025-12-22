@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Game;
-using StashUi = Loki.Game.LokiPoe.InGameState.StashUi;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using StashUi = DreamPoeBot.Loki.Game.LokiPoe.InGameState.StashUi;
 
 namespace Default.MapBot
 {

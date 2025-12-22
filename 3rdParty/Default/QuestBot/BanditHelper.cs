@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Forms;
 using Default.EXtensions;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.QuestBot
 {

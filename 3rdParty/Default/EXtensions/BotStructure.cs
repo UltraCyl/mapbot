@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Reflection;
-using Loki.Bot;
+using DreamPoeBot.Loki.Bot;
 
 namespace Default.EXtensions
 {

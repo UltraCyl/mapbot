@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Default.EXtensions.Positions;
-using Loki.Game;
+using DreamPoeBot.Loki.Game;
 
 namespace Default.EXtensions
 {

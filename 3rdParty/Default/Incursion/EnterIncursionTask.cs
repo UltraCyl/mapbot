@@ -1,12 +1,12 @@
 ﻿using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Message = Loki.Bot.Message;
+using Message = DreamPoeBot.Loki.Bot.Message;
 
 namespace Default.Incursion
 {

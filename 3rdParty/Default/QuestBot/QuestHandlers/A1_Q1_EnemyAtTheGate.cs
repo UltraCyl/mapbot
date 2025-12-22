@@ -2,10 +2,10 @@
 using Default.EXtensions;
 using Default.EXtensions.Global;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.GameData;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.QuestBot.QuestHandlers
 {

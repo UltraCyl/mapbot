@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Default.EXtensions;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.MapBot
 {

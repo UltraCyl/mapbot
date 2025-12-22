@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.AutoFlask
 {

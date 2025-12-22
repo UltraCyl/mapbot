@@ -6,8 +6,8 @@ using Default.EXtensions;
 using Default.EXtensions.Global;
 using Default.QuestBot.QuestHandlers;
 using Loki;
-using Loki.Game;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.GameData;
 using Newtonsoft.Json;
 
 namespace Default.QuestBot

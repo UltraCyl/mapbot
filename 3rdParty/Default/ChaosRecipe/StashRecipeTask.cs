@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Positions;
-using Loki.Bot;
-using Loki.Common;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Common;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.ChaosRecipe
 {

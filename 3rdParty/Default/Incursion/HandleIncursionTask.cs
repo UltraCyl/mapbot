@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
-using Loki.Bot;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 using System.Linq;
 using Default.EXtensions.Positions;
 

@@ -3,8 +3,8 @@ using Default.EXtensions;
 using Default.EXtensions.CachedObjects;
 using Default.EXtensions.Global;
 using Default.EXtensions.Positions;
-using Loki.Game;
-using Loki.Game.Objects;
+using DreamPoeBot.Loki.Game;
+using DreamPoeBot.Loki.Game.Objects;
 
 namespace Default.QuestBot.QuestHandlers
 {

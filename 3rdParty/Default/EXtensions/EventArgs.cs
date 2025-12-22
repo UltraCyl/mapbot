@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Default.EXtensions.CachedObjects;
-using Loki.Bot;
-using Loki.Game.GameData;
+using DreamPoeBot.Loki.Bot;
+using DreamPoeBot.Loki.Game.GameData;
 
 namespace Default.EXtensions
 {
